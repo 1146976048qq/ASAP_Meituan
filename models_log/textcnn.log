@@ -1,0 +1,70 @@
+
+0it [00:00, ?it/s]
+2044it [00:00, 20439.78it/s]
+3925it [00:00, 19921.15it/s]
+6489it [00:00, 21348.90it/s]
+9061it [00:00, 22494.59it/s]
+11772it [00:00, 23704.66it/s]
+14341it [00:00, 24265.32it/s]
+16893it [00:00, 24628.33it/s]
+19213it [00:00, 24143.94it/s]
+21530it [00:00, 23246.60it/s]
+23794it [00:01, 19037.78it/s]
+26168it [00:01, 20240.35it/s]
+28393it [00:01, 20799.82it/s]
+30532it [00:01, 19819.99it/s]
+33020it [00:01, 21105.41it/s]
+35189it [00:01, 20405.34it/s]
+36850it [00:01, 22001.48it/s]
+
+0it [00:00, ?it/s]
+1655it [00:00, 9038.27it/s]
+4097it [00:00, 11142.93it/s]
+4940it [00:00, 15526.22it/s]
+
+0it [00:00, ?it/s]
+2405it [00:00, 24041.77it/s]
+4401it [00:00, 22651.54it/s]
+4940it [00:00, 21952.38it/s]
+Vocab size: 4762
+Time usage: 0:00:02
+<bound method Module.parameters of Model(
+  (embedding): Embedding(4762, 300)
+  (convs): ModuleList(
+    (0): Conv2d(1, 256, kernel_size=(2, 300), stride=(1, 1))
+    (1): Conv2d(1, 256, kernel_size=(3, 300), stride=(1, 1))
+    (2): Conv2d(1, 256, kernel_size=(4, 300), stride=(1, 1))
+  )
+  (dropout): Dropout(p=0.5)
+  (fc): Linear(in_features=768, out_features=3, bias=True)
+)>
+Epoch [1/20]
+Iter:      0,  Train Loss:   1.1,  Train Acc: 67.97%,  Val Loss:   0.7,  Val Acc: 77.78%,  Time: 0:00:01 *
+Iter:    100,  Train Loss:  0.66,  Train Acc: 78.12%,  Val Loss:  0.64,  Val Acc: 77.78%,  Time: 0:00:04 *
+Iter:    200,  Train Loss:  0.69,  Train Acc: 76.56%,  Val Loss:  0.62,  Val Acc: 78.25%,  Time: 0:00:07 *
+Epoch [2/20]
+Iter:    300,  Train Loss:  0.74,  Train Acc: 75.00%,  Val Loss:  0.61,  Val Acc: 78.68%,  Time: 0:00:10 *
+Iter:    400,  Train Loss:  0.51,  Train Acc: 82.81%,  Val Loss:  0.61,  Val Acc: 78.54%,  Time: 0:00:13 
+Iter:    500,  Train Loss:  0.66,  Train Acc: 78.12%,  Val Loss:  0.62,  Val Acc: 78.60%,  Time: 0:00:16 
+Epoch [3/20]
+Iter:    600,  Train Loss:  0.59,  Train Acc: 78.91%,  Val Loss:   0.6,  Val Acc: 78.97%,  Time: 0:00:19 *
+Iter:    700,  Train Loss:  0.46,  Train Acc: 87.50%,  Val Loss:   0.6,  Val Acc: 79.07%,  Time: 0:00:21 *
+Iter:    800,  Train Loss:  0.55,  Train Acc: 81.25%,  Val Loss:  0.59,  Val Acc: 79.19%,  Time: 0:00:24 *
+Epoch [4/20]
+Iter:    900,  Train Loss:  0.38,  Train Acc: 86.72%,  Val Loss:   0.6,  Val Acc: 79.03%,  Time: 0:00:27 
+Iter:   1000,  Train Loss:  0.62,  Train Acc: 73.44%,  Val Loss:   0.6,  Val Acc: 79.01%,  Time: 0:00:30 
+Iter:   1100,  Train Loss:  0.54,  Train Acc: 81.25%,  Val Loss:   0.6,  Val Acc: 78.64%,  Time: 0:00:33 
+Epoch [5/20]
+Iter:   1200,  Train Loss:  0.58,  Train Acc: 77.34%,  Val Loss:  0.61,  Val Acc: 79.03%,  Time: 0:00:36 
+Iter:   1300,  Train Loss:   0.4,  Train Acc: 84.38%,  Val Loss:  0.62,  Val Acc: 78.95%,  Time: 0:00:39 
+Iter:   1400,  Train Loss:  0.56,  Train Acc: 78.12%,  Val Loss:  0.62,  Val Acc: 78.80%,  Time: 0:00:41 
+Epoch [6/20]
+Iter:   1500,  Train Loss:  0.55,  Train Acc: 77.34%,  Val Loss:  0.63,  Val Acc: 78.58%,  Time: 0:00:44 
+Iter:   1600,  Train Loss:  0.44,  Train Acc: 82.03%,  Val Loss:  0.64,  Val Acc: 78.52%,  Time: 0:00:47 
+Iter:   1700,  Train Loss:  0.57,  Train Acc: 75.00%,  Val Loss:  0.64,  Val Acc: 78.78%,  Time: 0:00:50 
+Epoch [7/20]
+Iter:   1800,  Train Loss:  0.36,  Train Acc: 88.28%,  Val Loss:  0.66,  Val Acc: 78.39%,  Time: 0:00:53 
+No optimization for a long time, auto-stopping...
+Test Loss:  0.59,  Test Acc: 79.93%
+
+Time usage: 0:00:00
