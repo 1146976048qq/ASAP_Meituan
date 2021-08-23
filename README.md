@@ -19,4 +19,8 @@ Bert_based Methods:
 2) Bert — To do
 3) Bert_CNN — To do
 4) Bert_RNN — To do
-5) RoBERTa — Done — 85.2%
+5) Bert_Medium - To do
+
+
+
+6) RoBERTa — Done — 85.2%
