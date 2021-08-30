@@ -13,13 +13,13 @@ Traditional Methods:
 
 
 
-Bert_based Methods:
+Bert_based Methods: （eg., Tranformer, bert_base_uncased, bert_CNN, ...）
 
 1) Transformer — Done — 80.81%
-2) Bert — To do
-3) Bert_CNN — To do
-4) Bert_RNN — To do
-5) Bert_Medium - To do
+2) Bert — 82.56% (待精调)
+3) Bert_CNN — 82.77% (待精调)
+4) Bert_RNN — 83.04% (待精调)
+5) Ernie — To do
 
 
 
