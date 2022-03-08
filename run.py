@@ -34,7 +34,7 @@ if __name__ == '__main__':
     np.random.seed(3) # seed值可手动调整
     torch.manual_seed(3)
     torch.cuda.manual_seed_all(3)
-    torch.backends.cudnn.deterministic = True  # 保证每次结果一样
+    torch.backends.cudnn.deterministic = True  # ture 保证每次结果一样
 
     start_time = time.time()
     print("Loading data...")
@@ -52,3 +52,11 @@ if __name__ == '__main__':
         init_network(model)
     print(model.parameters)
     train(config, model, train_iter, dev_iter, test_iter)
+    
+#     # train
+#     config.n_vocab = len(vocab)
+#     model = x.Model(config).to(config.device)
+#     if model_name != 'BERT':
+#         init_network(model)
+#     print(model.parameters)
+#     train(config, model, train_iter, dev_iter, test_iter)
