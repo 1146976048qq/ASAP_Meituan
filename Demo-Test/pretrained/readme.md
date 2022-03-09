@@ -1,4 +1,4 @@
-#pre-trained model
+### pre-trained model should contain the following files:
 
 #pytorch_model.bin
 
