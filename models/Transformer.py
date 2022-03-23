@@ -106,15 +106,15 @@ class Scaled_Dot_Product_Attention(nn.Module):
         super(Scaled_Dot_Product_Attention, self).__init__()
 
     def forward(self, Q, K, V, scale=None):
-        '''
-        Args:
-            Q: [batch_size, len_Q, dim_Q]
-            K: [batch_size, len_K, dim_K]
-            V: [batch_size, len_V, dim_V]
-            scale: 缩放因子 论文为根号dim_K
-        Return:
-            self-attention后的张量，以及attention张量
-        '''
+#         '''
+#         Args:
+#             Q: [batch_size, len_Q, dim_Q]
+#             K: [batch_size, len_K, dim_K]
+#             V: [batch_size, len_V, dim_V]
+#             scale: 缩放因子 论文为根号dim_K
+#         Return:
+#             self-attention后的张量，以及attention张量
+#         '''
         attention = torch.matmul(Q, K.permute(0, 2, 1))
         if scale:
             attention = attention * scale
@@ -147,8 +147,6 @@ class Multi_Head_Attention(nn.Module):
         Q = Q.view(batch_size * self.num_head, -1, self.dim_head)
         K = K.view(batch_size * self.num_head, -1, self.dim_head)
         V = V.view(batch_size * self.num_head, -1, self.dim_head)
-        # if mask:  # TODO
-        #     mask = mask.repeat(self.num_head, 1, 1)  # TODO change this
         scale = K.size(-1) ** -0.5  # 缩放因子
         context = self.attention(Q, K, V, scale)
 
